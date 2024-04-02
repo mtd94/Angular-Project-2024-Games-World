@@ -1,0 +1,58 @@
+<div class="container">
+  <form class="login" #form="ngForm" (ngSubmit)="login(form)">
+    <fieldset>
+      <h2>Login Form</h2>
+        <label for="email"></label>
+        <input
+          class="input-error"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="example@example.com"
+          ngModel
+          #inputEmail="ngModel"
+          required
+          [appEmail]="appEmailDomains"
+        />
+   
+
+      <ng-container *ngIf="inputEmail.touched">
+        <p class="error" *ngIf="inputEmail.errors?.['required']">
+          Email is required!
+        </p>
+        <p class="error" *ngIf="inputEmail.errors?.['appEmailValidator']">
+          Email is not valid!
+        </p>
+      </ng-container>
+
+        <label for="password"></label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="******"
+          #inputPassword="ngModel"
+          ngModel
+          required
+          minlength="5"
+        />
+      <ng-container *ngIf="inputPassword.touched">
+        <p class="error" *ngIf="inputPassword.errors?.['required']">
+          Password is required!
+        </p>
+        <p class="error" *ngIf="inputPassword.errors?.['minlength']">
+          Password must be at least
+          {{inputPassword.errors?.['minlength']['requiredLength']}} characters!
+        </p>
+      </ng-container>
+
+      <button [disabled]="form.invalid">Login</button>
+
+      <p class="text-center">
+        Have an account?
+        <a routerLink="/auth/register">Register</a>
+      </p>
+    </fieldset>
+  </form>
+</div>
+

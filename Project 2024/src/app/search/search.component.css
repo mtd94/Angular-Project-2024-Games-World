@@ -1,0 +1,98 @@
+.search {
+    border-radius: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: burlywood;
+  
+
+}
+
+.search form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    margin: 20px;
+    background-color: burlywood;
+    color:aliceblue;
+    align-items: center;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.btn {
+    display: block;
+    border: 6px solid white;
+    color: coral;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 22px;
+    background-color: #0c0c0c;
+    font-family: cursive;
+}
+
+.err {
+    color: red;
+    font-size: 20px;
+    
+}
+
+
+.game {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   padding: 20px;
+   margin: 20px;
+   background-color: burlywood;
+   color:aliceblue;
+   align-items: center;
+   border:#0c0c0c 2px solid;
+   border-radius: 10px;
+   max-width: 85%;
+   margin: 0 auto;
+}
+
+.game img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px #313131;
+    transition: 0.3s;
+    border: #313131 solid 4px;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
+
+}
+
+.not {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    margin: 20px;
+    background-color: burlywood;
+    color:aliceblue;
+    align-items: center;
+    border:#0c0c0c 2px solid;
+    border-radius: 10px;
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.seemore {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #313131;
+    border: 1px solid #313131;
+    color: #ffffff;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 0 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

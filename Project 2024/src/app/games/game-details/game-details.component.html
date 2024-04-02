@@ -1,0 +1,21 @@
+<section class="shop_section layout_padding">
+  <div class="container">
+      <div class="box">
+        <h2>
+          DETAILS
+          </h2>
+        <div class="detail-box">
+<div *ngIf="game">
+<div class="img-box">
+  <img id="game" src="{{ game.imgUrl }}" /> 
+  <p>Name:{{game.name}}</p>
+  <p>System requirements:{{game.description}}</p>
+  <p>Year:{{game.year}}</p>
+  <p>Genre:{{game.genre}}</p>
+  <div class="btn-box" *ngIf="isOwner">
+    <button class="edit" a routerLink="/game-edit/{{game._id}}">Edit
+    </button>
+    <button class="del" (click)="deleteGame()">Delete</button>   
+    </div>
+  </div>
+</div>

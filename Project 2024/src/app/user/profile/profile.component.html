@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="profile">
+    <img src="../../../assets/account-avatar-profile-user-11.svg" height="200" alt="default user" />
+    <h3>User Info:</h3>
+
+    <!-- READONLY MODE -->
+    <ng-container *ngIf="user">
+      <div class="fname">
+        <p>First name:</p>
+        <p>{{ profileDetails.firstName }}</p>
+        </div>
+        <div class="lname">
+          <p>Last name:</p>
+          <p>{{ profileDetails.lastName }}</p>
+          </div>
+      <div class="user">
+        <p>Username:</p>
+        <p>{{ profileDetails.username }}</p>
+      </div>
+      <div class="email">
+        <p>Email:</p>
+        <p>{{ profileDetails.email }}</p>
+      </div>
+      <div class="games">
+        <p>Created games:</p>
+        <p>{{ownGameList.length}}</p>
+      </div>
+      <div>
+      </div>
+    </ng-container>
+
+    
+  </div>
+</div>

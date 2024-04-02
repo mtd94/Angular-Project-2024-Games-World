@@ -1,0 +1,94 @@
+<div class="container">
+    <form #form="ngForm" (ngSubmit)="(newGameSubmitHandler)(form)">
+
+      <h2>Create game</h2>
+      <div>
+      <label for="name"></label>
+      <input type="text" id="name" name="name" class="form-control"
+      ngModel
+      #inputName="ngModel"
+      required
+      minlength="3"
+      placeholder="Game name..">
+  
+      <ng-container *ngIf="inputName.touched">
+        <p class="error" *ngIf="inputName.errors?.['required']">
+          This field is required.
+        </p>
+        <p class="error" *ngIf="inputName.errors?.['minlength']">
+          This field must be at least 3 characters long.
+        </p>
+      </ng-container>
+      </div>
+    
+    <div>
+      <label for="imgUrl"></label>
+      <input type="text" id="imgUrl" name="imgUrl" class="form-control" placeholder="Image URL.."
+      ngModel
+      #inputName="ngModel"
+      required>
+  
+      <ng-container *ngIf="inputName.touched">
+        <p class="error" *ngIf="inputName.errors?.['required']">
+          This field is required.
+        </p>
+        </ng-container>
+    </div>
+  
+    <div>
+      <label for="description"></label>
+      <input type="text" id="description" name="description" class="form-control"
+      placeholder="System requirements.."
+      ngModel
+      #inputName="ngModel"
+      required>
+  
+      <ng-container *ngIf="inputName.touched">
+        <p class="error" *ngIf="inputName.errors?.['required']">
+          This field is required.
+        </p>
+        <p class="error" *ngIf="inputName.errors?.['minlength']">
+          This field must be at least 5 characters long.
+        </p>
+      </ng-container>
+    </div>
+  
+    <div>
+      <label for="year"></label>
+      <input type="text" id="year" name="year" class="form-control"
+      placeholder="Year.."
+      ngModel
+      #inputName="ngModel"
+      required>
+  
+      <ng-container *ngIf="inputName.touched">
+        <p class="error" *ngIf="inputName.errors?.['required']">
+          This field is required.
+        </p>
+        <p class="error" *ngIf="inputName.errors?.['minlength']">
+          This field must be at least 4 characters long.
+        </p>
+      </ng-container>
+    </div>
+  
+    <div>
+      <label for="genre"></label>
+      <input type="text" id="genre" name="genre" class="form-control"
+      placeholder="Genre.."
+      ngModel
+      #inputName="ngModel"
+      required>
+  
+      <ng-container *ngIf="inputName.touched">
+        <p class="error" *ngIf="inputName.errors?.['required']">
+          This field is required.
+        </p>
+        <p class="error" *ngIf="inputName.errors?.['minlength']">
+          This field must be at least 4 characters long.
+        </p>
+      </ng-container>
+    </div>
+    
+      <button>Create Game</button>
+    </form>
+  </div>

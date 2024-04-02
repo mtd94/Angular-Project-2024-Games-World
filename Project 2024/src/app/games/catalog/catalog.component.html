@@ -1,0 +1,22 @@
+<section class="shop_section layout_padding">
+  <div class="container">
+      <div class="box">
+        <h2>
+          CATALOG
+          </h2>
+          <div *ngIf="games.length == 0">
+            <p>There no founded games!</p>
+          </div>
+        <div class="detail-box">
+<div *ngFor="let game of games">
+<div class="img-box">
+  <h4>{{game.name}}</h4>
+  <img id="game" src="{{ game.imgUrl }}" style="height: 300px; width: 300;" />  
+  <div *ngIf="isLogged">
+  <div class="btn-box">
+    <button a routerLink="/game-details/{{game._id}}">Details
+    </button>   
+    </div>  
+    </div>
+</div>
+        

@@ -1,0 +1,176 @@
+
+.img-box{
+  display: block;
+  border-radius: 22px;
+  align-items: center;
+
+}
+
+
+.img-box.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border: #313131 solid 4px;
+}
+
+.shop_section .box .detail-box h2 {
+  font-weight: bold;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.shop_section .box .detail-box p {
+  margin-bottom: 0;
+}
+
+.shop_section .box .img-box img {
+  max-width: 100%;
+}
+
+.shop_section .box .btn-box {
+  margin-top: 25px;
+}
+
+.shop_section .box .btn-box a {
+  display: inline-block;
+  padding: 8px 40px;
+  background-color: #313131;
+  border: 1px solid #313131;
+  color: #ffffff;
+}
+
+.shop_section .box .btn-box a:hover {
+  background-color: transparent;
+  color: #313131;
+}
+
+.btn-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn-box button {
+  display: flex;
+  padding: 5px 10px;
+  background-color: #313131;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 15px;
+  text-transform: uppercase;
+  justify-content: space-between;
+  border-radius: 5px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  
+}
+
+.detail-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 3px solid #313131;
+  border-radius: 22px;
+  padding: 20px;
+  background-color: burlywood;
+
+}
+
+.box h2 {
+  font-weight: bold;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.detail-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 3px solid #313131;
+  border-radius: 22px;
+  padding: 20px;
+  background-color: burlywood;
+  border: #313131 solid 2px;
+  box-shadow: #313131 1px 2px;
+}
+
+.img-box {
+  display: block;
+  border-radius: 10px;
+  align-items: center;
+  max-width: 90%;
+  margin: 0 auto;
+  height: auto;
+}
+
+.img-box h4 {
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+button {
+  display: flex;
+  padding: 5px 10px;
+  background-color: #313131;
+  border: 1px solid #313131;
+  color: #ffffff;
+  font-size: 15px;
+  text-transform: uppercase;
+  justify-content: space-around;
+  border: #ffffff solid 2px;
+  
+}
+
+.btn-box button:hover {
+  background-color: red;
+  color: #313131;
+}
+
+.img-box p {
+  margin-bottom: 0;
+  font-size: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.box h2 {
+  text-transform: uppercase;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.img-box #game {
+  width: 100%;
+  height: 100%;
+  box-shadow: #313131 3px 3px;
+}
