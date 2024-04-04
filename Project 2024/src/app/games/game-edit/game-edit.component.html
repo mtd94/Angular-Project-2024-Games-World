@@ -3,8 +3,9 @@
   <!-- <div *ngIf="isLoading">
     <app-loader />
   </div> -->
-  
+   
     <form (ngSubmit)="updateGameSubmitHandler()">
+      <h2>Edit game</h2>
       <div>
       <label></label>
       <input type="text" [(ngModel)]="game.name" name="name" class="form-control"

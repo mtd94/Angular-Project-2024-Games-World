@@ -32,7 +32,7 @@
         <p>Created at: {{game.userId.created_at | elapsedTime}}</p>
         <button class="seemore" routerLink="/catalog">See more</button>
       </div>
-      <div *ngIf="searchGames.length == 0"
+      <div *ngIf="searchGames.length == 0">
       class="not">
         <p>There no founded games!</p>
       </div>
