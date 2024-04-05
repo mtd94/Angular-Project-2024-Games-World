@@ -25,6 +25,7 @@
         <p>Created games:</p>
         <p>{{ownGameList.length}}</p>
       </div>
+      <div class="card" *ngFor="let game of ownGameList"><p><img src="{{game.imgUrl}}" height="200"></p></div>
       <div>
       </div>
     </ng-container>

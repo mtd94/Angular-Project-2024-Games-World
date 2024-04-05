@@ -29,7 +29,6 @@
        <div class="game">
             <img src="{{game.imgUrl}}">
         </div>
-        <p>Created at: {{game.userId.created_at | elapsedTime}}</p>
         <button class="seemore" routerLink="/catalog">See more</button>
       </div>
       <div *ngIf="searchGames.length == 0">

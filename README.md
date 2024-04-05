@@ -93,8 +93,11 @@ Valid data in this case is:
 Page only for logged in users
 Profile page contains:
  -  personal account information for user 
+ - created games
 
 ![image](https://iili.io/JNWhb8G.png)
+
+![image](https://iili.io/JNUrqH7.png)
 
 
 
