@@ -28,6 +28,8 @@
       <div *ngFor="let game of searchGame">
        <div class="game">
             <img src="{{game.imgUrl}}">
+            <p>Created on: {{game.userId.created_at | elapsedTime}}</p>
+
         </div>
         <button class="seemore" routerLink="/catalog">See more</button>
       </div>

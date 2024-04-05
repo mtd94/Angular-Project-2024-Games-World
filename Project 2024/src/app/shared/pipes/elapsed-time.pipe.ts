@@ -1,3 +1,4 @@
+import { DatePipe } from '@angular/common';
 import { Pipe, PipeTransform } from '@angular/core';
 import * as moment from 'moment';
 
@@ -5,8 +6,9 @@ import * as moment from 'moment';
   name: 'elapsedTime',
 })
 export class ElapsedTimePipe implements PipeTransform {
-  transform(dateString: string, ...args: unknown[]): unknown {
+  transform(dateString: string,...args: unknown[]): unknown {
     // date from the posts from today's date
-    return moment(dateString).fromNow();
+    return moment(dateString).format("Do MMM YY")
+
   }
 }
