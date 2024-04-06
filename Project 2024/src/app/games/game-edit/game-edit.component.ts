@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { GameService } from '../../services/game.service';
 import { ActivatedRoute } from '@angular/router';
+import { Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-game-edit',
@@ -12,11 +13,11 @@ export class GameEditComponent {
   isLoading: boolean = true;
   gameId!: any;
   game: any = {
-    name: '',
-    imgUrl: '',
-    description: '',
-    year: '',
-    genre: '',
+    name: ['',[Validators.required,Validators.minLength(3)]],
+    imgUrl: ['',[Validators.required]],
+    description: ['',[Validators.required,Validators.minLength(5)]],
+    year: ['',[Validators.required],Validators.minLength(4)],
+    genre: ['',[Validators.required,Validators.minLength(3)]],
   }
 
   constructor(

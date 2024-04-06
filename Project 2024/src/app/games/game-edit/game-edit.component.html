@@ -9,6 +9,8 @@
       <div>
       <label></label>
       <input type="text" [(ngModel)]="game.name" name="name" class="form-control"
+      ngModel
+      #inputName="ngModel"
       required
       minlength="3">
   
@@ -25,6 +27,8 @@
     <div>
       <label for="img"></label>
       <input type="text" id="imgUrl" [(ngModel)]="game.imgUrl" name="imgUrl" class="form-control"
+      ngModel
+      #inputName="ngModel"
       required>
   
       <ng-container *ngIf="inputName.touched">
@@ -37,6 +41,9 @@
     <div>
       <label for="description"></label>
       <input type="text" id="description" [(ngModel)]="game.description" name="description" class="form-control"
+      ngModel
+      #inputName="ngModel"
+      minlength="5"
       required>
   
       <ng-container *ngIf="inputName.touched">
@@ -52,6 +59,9 @@
     <div>
       <label for="year"></label>
       <input type="text" id="year" [(ngModel)]="game.year" name="year"  class="form-control"
+      ngModel
+      #inputName="ngModel"
+      minlength="4"
       required>
   
       <ng-container *ngIf="inputName.touched">
@@ -69,6 +79,7 @@
       <input type="text" id="genre" [(ngModel)]="game.genre" name="genre" class="form-control"
       ngModel
       #inputName="ngModel"
+      minlength="4"
       required>
   
       <ng-container *ngIf="inputName.touched">

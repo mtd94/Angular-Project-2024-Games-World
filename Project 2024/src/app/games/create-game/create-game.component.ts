@@ -18,7 +18,7 @@ export class CreateGameComponent {
       name: ['',[Validators.required,Validators.minLength(3)]],
       imgUrl: ['',[Validators.required]],
       description: ['',[Validators.required,Validators.minLength(5)]],
-      year: ['',[Validators.required]],
+      year: ['',[Validators.required],Validators.minLength(4)],
       genre: ['',[Validators.required,Validators.minLength(3)]],
     })
 
