@@ -8,7 +8,7 @@ Used a Softuni Rest-api server for back-end with modification (in mongoose Model
 1. Clone the repository: https://github.com/mtd94/
 2. Navigate to server folder:
    - npm install - command for install all packeges dependances;
-   - npm start - command for install allcommand to start the back-end server;
+   - npm start - command for install allcommand to start the back-en server;
 3. Navigate to games-world folder:
    - npm install - command for install all install all packeges dependances;
    - Run client Angular app - 
